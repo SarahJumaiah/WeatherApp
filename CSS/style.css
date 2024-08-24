@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #1e98514a; /*dark mode*/
+}
+.card{
+    width: 90%;
+    max-width: 450px;
+    background: linear-gradient(157deg, rgba(121,147,209,1) 18%, rgba(82,190,241,1) 50%, rgba(134,246,161,1) 100%);
+    color: #fff;
+    margin: 100px auto 0; /*spacing around the .card
+    100 top
+    auto:centers card horizontally (right left)
+    0:sets bottom margin to 0 no extra space belowcard (bottom)
+    */
+    border-radius: 20px;
+    padding: 40px 35px; /*40: top and bottom 35: right left*/
+    text-align: center;
+}
+.search input{
+    border: 0; /*عشان يصير  بدون حواف*/
+    outline: 0;
+    background:#ebfffc;
+    color:#555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px; /*بينه وبين الايكون*/ 
+    font-size: 18px;
+}
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 70px;
+    font-weight: 515;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex; /*bcs we want to create two column*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /*0 top down 20 left right*/
+    margin-top: 50px;
+}
+.col{
+   display: flex;
+   align-items: center;
+   text-align: left; 
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 30px;
+    margin-top: -1px;
+}
